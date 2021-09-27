@@ -33,7 +33,7 @@ body{
 
   /*Req 1*/
   font-family:"Andika", sans-serif;
-  background: url(/images/pigeon-background.jpeg);
+  background-image: url(file:///Users/tylercarvette/Desktop/SI%20339/Homework/Homework%204/hw4-2021-main/images/pigeon-background.JPEG);
   color:#DDDDDD
 
 }
