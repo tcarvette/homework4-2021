@@ -34,7 +34,7 @@ body{
   /*Req 1*/
   font-family:"Andika", sans-serif;
   background-color:#DDDDDD;
-  background: url(../images/pigeon-background.JPEG);
+  background-image: url(../images/pigeon-background.JPEG);
 
 
 }
