@@ -32,6 +32,10 @@ body{
   background-position: center;
 
   /*Req 1*/
+  font-family:"Andika", sans-serif;
+  background-image: url(images/pigeon-background.jpeg);
+  color:#DDDDDD
+
 }
 
 h1{
