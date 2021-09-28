@@ -35,6 +35,7 @@ body{
   font-family:"Andika", sans-serif;
   background-color:#DDDDDD;
   background-image: url(../images/pigeon-background.JPEG);
+  background-repeat:no-repeat;
 
 
 }
@@ -44,46 +45,97 @@ h1{
   font-size: 2em;
 
   /*Req 2*/
+  line-height:2;
+  text-align:center;
 }
 
 p{
-  
+  padding-top:15px;
 }
 
 a{
-  
+  font-size:16px;
+  color:#B21F50;
+  text-decoration-style:wavy;
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
-
+*:focus{
+  border:3px dashed #417243;
+}
 
 
 td{
-  
+  text-align:center;
+  padding:10px;
+  border-top:2px #000000;
 }
 
 
 .colhead{
   color: #FFFFFF;
-
+  padding:10px;
+  min-width:125px;
+  /* center horizontally */
+  margin:auto;
+  vertical-align:middle;
+  text-transform:uppercase;
+  background-color:#7e0825;
 }
 
 .rowhead{
-
+  border-top:2px #000000;
+  border-right:2px #000000;
+  padding:10px;
 }
 
+/* odd numbered table row */
+tr:nth-child(odd){
+  background:transparent;
+}
+
+/* even numbered table row */
+tr:nth-child(even){
+  background-color:#D1D1D1
+}
+
+/* hovering */
+tr:hover{
+  background-color:rgba(126,8,37,0.25);
+}
 
 table{
     border: 5px solid #000000;
+    margin-left:auto;
+    margin-right:auto;
+    /* curving black border of table */
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
 }
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{}
+/* top left corner */
+thead tr:first-child th:first-child{
+  border-top-left-radius:50px;
+}
 
 /*Add selectors and rules here*/
-
+/* top right corner */
+thead tr:first-child th:last-child{
+  border-top-right-radius:50px;
+}
+/* bottom left corner */
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius:50px;
+}
+/* bottom right corner */
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius:50px;
+}
 
 
 footer{
@@ -91,4 +143,9 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height:75px;
+  /* positioning of footer */
+  position:fixed;
+  left:0;
+  bottom:0;
 }
