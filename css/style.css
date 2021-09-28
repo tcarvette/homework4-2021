@@ -68,8 +68,8 @@ a{
 
 td{
   text-align:center;
+  border-top:2px solid black;
   padding:10px;
-  border-top:2px #000000;
 }
 
 
@@ -85,8 +85,8 @@ td{
 }
 
 .rowhead{
-  border-top:2px #000000;
-  border-right:2px #000000;
+  border-top:2px solid black;
+  border-right:2px solid black;
   padding:10px;
 }
 
